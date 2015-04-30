@@ -1,0 +1,53 @@
+<script src="https://derbyjs.github.io/derby-standalone/dist/0.6.0-alpha37/derby-standalone.min.js"></script>
+
+<!-- we create a template to use as the body -->
+<script type="text/template" id="body">
+  <view is="home"></view>
+</script>
+
+<script type="text/template" id="home">
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Communal and Agentic</h1>
+      <p class="lead">Determine whether a performance review, introduction, recommendation or other body of text uses more communal or agentic adjectives.</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <form>
+          <div class="form-group">
+            Score: {{score || ''}}
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" rows="5" placeholder="Enter text...">
+              {{corpus}}
+            </textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6">
+        <ul>
+          {{each communalAdjectives as #adjective}}
+            <li>{{#adjective}}</li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <ul>
+          {{each agenticAdjectives as #adjective}}
+            <li>{{#adjective}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>More Resources</h2>
+        <ul>
+          <li><a target="_blank" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB4QFjAA&url=http%3A%2F%2Fwww.researchgate.net%2Fprofile%2FAndrea_Abele%2Fpublication%2F9049556_The_dynamics_of_masculine-agentic_and_feminine-communal_traits_findings_from_a_prospective_study%2Flinks%2F0fcfd50978bc46df9f000000.pdf&ei=CaZBVemdKYXfoATV7YCoBQ&usg=AFQjCNFDUTVihxKI_zkNFz-xqC_KwlsEjg&sig2=5bd19ePvGh6vcMV7bVOOJw">The Dynamics of Masculine-Agentic and Feminine-Communal Traits: Findings From a Prospective Study</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</script>
