@@ -1,0 +1,50 @@
+body {
+  color: #515357;
+  font-family: 'Open Sans', sans-serif;
+}
+footer {
+  display: block;
+  position: relative;
+  width: 800px;
+  margin: 0 auto;
+  color: #84868A;
+  font-size: 12px;
+  padding: 30px 50px;
+}
+footer > p {
+  border-top: 1px solid #D0D2D6;
+  padding: 10px 0px;
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 200;
+}
+.container {
+  display: block;
+  position: relative;
+  width: 800px;
+  margin: auto;
+  padding: 50px;
+}
+textarea {
+  width: 100%;
+}
+.row {
+  width: 100%;
+  position: relative;
+}
+.col {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+@-webkit-keyframes fade-in {
+	0%   { opacity: 0; }
+	50%   { opacity: 0; }
+	100% { opacity: 1; }
+}
+.fade-in {
+	-webkit-animation-name: fade-in;
+	-webkit-animation-duration: 1.5s;
+}

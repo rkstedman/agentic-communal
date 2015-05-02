@@ -1,54 +1,21 @@
 <header>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <style>
-    /*! normalize.css v3.0.2 | MIT License | git.io/normalize */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:0.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
-    body {
-      color: #515357;
-      font-family: 'Open Sans', sans-serif;
-    }
-    h2 {
-      text-transform: uppercase;
-      font-size: 16px;
-      font-weight: 200;
-    }
-    .container {
-      display: block;
-      position: relative;
-      width: 800px;
-      margin: auto;
-      padding: 50px;
-    }
-    textarea {
-      width: 100%;
-    }
-    .row {
-      width: 100%;
-      position: relative;
-    }
-    .col {
-      width: 50%;
-    }
-    .right-col {
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-    .left-col {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  </style>
+  <link href='./css/normalize.css' rel='stylesheet' type='text/css'>
+  <link href='./css/main.css' rel='stylesheet' type='text/css'>
 </header>
 <body>
 </body>
-
 
 <script src="https://derbyjs.github.io/derby-standalone/dist/0.6.0-alpha37/derby-standalone.min.js"></script>
 
 <!-- we create a template to use as the body -->
 <script type="text/template" id="body">
   <view is="home"></view>
+  <footer>
+    <p>
+      This website was inspired by a talk by <a href="http://gender.stanford.edu/people/lori-nishiura-mackenzie" target="_blank">Lori Mackenzie</a> of the <a href="http://gender.stanford.edu/" target="_blank">Clayman Institute for Gender Research</a>.
+    </p>
+  </footer>
 </script>
 
 <script type="text/template" id="home">
@@ -87,10 +54,26 @@
         </ul>
       </div>
     </div>
+    {{if corpus}}
+      <div class="fade-in">
+        <h3> </h3>
+        <p>Although these are all positive attributes, the unfortunate reality is that when individuals are perceived as communal, they are automatically seen as less agentic. Individuals described with agentic adjectives tend to be seen as better leaders. Thus, as we unconsciously accredit men with agentic traits and women with communal ones, we perpetuate our cultural beliefs that men&mdash;who are agentic&mdash;are the natural leaders.</p>
+        <!-- <p>Here are some thought-provoking questions to help you master the language in your communications, evaluations, bios, and introductions.
+           Understanding what biases your language might be inadvertently perpetuating can help yo
+        </p>
+        <ul>
+          <li>Are your adjectives supported by results? Did you know that... Try phrasing blah as blah</li>
+          <li> </li>
+        </ul> -->
+      </div>
+    {{/if}}
+
 <!--    <div class="row">
       <div class="col-lg-12">
         <h2>More Resources</h2>
+        <p>If you are looking to learn more about the gender-impliciations of agentic and communal adjective usage, there are many great resources to be found.</p>
         <ul>
+          <li>Lori's Language of Leadership slides: http://www.slideshare.net/dkosaraju/the-language-of-leadership</li>
           <li><a target="_blank" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=0CB4QFjAA&url=http%3A%2F%2Fwww.researchgate.net%2Fprofile%2FAndrea_Abele%2Fpublication%2F9049556_The_dynamics_of_masculine-agentic_and_feminine-communal_traits_findings_from_a_prospective_study%2Flinks%2F0fcfd50978bc46df9f000000.pdf&ei=CaZBVemdKYXfoATV7YCoBQ&usg=AFQjCNFDUTVihxKI_zkNFz-xqC_KwlsEjg&sig2=5bd19ePvGh6vcMV7bVOOJw">The Dynamics of Masculine-Agentic and Feminine-Communal Traits: Findings From a Prospective Study</a></li>
         </ul>
       </div>
@@ -98,108 +81,4 @@
 -->  </div>
 </script>
 
-<script>
-// Generated by CoffeeScript 1.7.1
-(function() {
-  var AGENTIC, COMMUNAL, Home, SOCIAL_COMMUNAL, app, page;
-
-  AGENTIC = {
-    daring: true,
-    bold: true,
-    confident: true,
-    assertive: true,
-    aggressive: true,
-    ambitious: true,
-    dominant: true,
-    forceful: true,
-    intellectual: true
-  };
-
-  COMMUNAL = {
-    affectionate: true,
-    helpful: true,
-    kind: true,
-    sympathetic: true,
-    sensitive: true,
-    nuturing: true,
-    agreeable: true,
-    caring: true,
-    collaborative: true
-  };
-
-  SOCIAL_COMMUNAL = {
-    hardworking: true,
-    conscientious: true,
-    dependeable: true,
-    meticulous: true
-  };
-
-  app = derby.createApp();
-
-  app.registerViews();
-
-  Home = (function() {
-    function Home() {}
-
-    Home.prototype.init = function() {
-      this.corpus = this.model.at('corpus');
-      this.agenticAdjectives = this.model.at('agenticAdjectives');
-      this.communalAdjectives = this.model.at('communalAdjectives');
-      return this.score = this.model.at('score');
-    };
-
-    Home.prototype.create = function() {
-      return this.corpus.on('change', (function(_this) {
-        return function() {
-          return _this.analyzeCorpus();
-        };
-      })(this));
-    };
-
-    Home.prototype.analyzeCorpus = function() {
-      var aCount, agentic, cCount, communal, corpus, word, _i, _len, _ref;
-      corpus = this.corpus.get();
-      if (!corpus) {
-        return;
-      }
-      communal = {};
-      agentic = {};
-      aCount = 0;
-      cCount = 0;
-      _ref = corpus.split(' ');
-      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-        word = _ref[_i];
-        if (AGENTIC[word] === true) {
-          agentic[word] || (agentic[word] = 0);
-          agentic[word] += 1;
-          aCount++;
-        } else if (COMMUNAL[word] === true) {
-          communal[word] || (communal[word] = 0);
-          communal[word] += 1;
-          cCount++;
-        }
-      }
-      this.agenticAdjectives.set(Object.keys(agentic));
-      this.communalAdjectives.set(Object.keys(communal));
-      return this.score.set(cCount - aCount);
-    };
-
-    return Home;
-
-  })();
-
-  app.component('home', Home);
-
-  page = app.createPage();
-
-  document.body.appendChild(page.getFragment('body'));
-
-  app.model.set("_page.text", "hello world");
-
-  app.model.add("testing", {
-    x: 5,
-    text: "hi"
-  });
-
-}).call(this);
-</script>
+<script src="./js/index.js"></script>

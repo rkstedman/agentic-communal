@@ -1,26 +1,61 @@
 # https://github.com/derbyjs/derby-standalone
 
 AGENTIC=
-  daring: true
-  bold: true
-  confident: true
-  assertive: true
+  'self-confident': true
+  active: true
   aggressive: true
   ambitious: true
+  assertive: true
+  authoritative: true
+  bold: true
+  coarse: true
+  confident: true
+  daring: true
+  decisive: true
   dominant: true
+  driver: true
+  entreneurial: true
   forceful: true
+  'go-getter': true
+  independent: true
+  influencial: true
+  innovator: true
   intellectual: true
+  outspoken: true
+  rational: true
+  'risk-taker': true
+  strong: true
+  strategic: true
+  tough: true
+  thinker: true
 
 COMMUNAL=
   affectionate: true
-  helpful: true
-  kind: true
-  sympathetic: true
-  sensitive: true
-  nuturing: true
   agreeable: true
+  appreciative: true
   caring: true
   collaborative: true
+  committed: true
+  dependent: true
+  dedicated: true
+  emotional: true
+  friendly: true
+  hardworking: true
+  helpful: true
+  gentle: true
+  kind: true
+  mild: true
+  nice: true
+  nuturing: true
+  pleasant: true
+  tactical: true
+  thoughtful: true
+  sensitive: true
+  supportive: true
+  sympathetic: true
+  warm: true
+  # relationship builder
+  # team player: true
 
 SOCIAL_COMMUNAL=
   hardworking: true
@@ -51,6 +86,7 @@ class Home
     aCount = 0
     cCount = 0
     for word in corpus.split(' ')
+      word = word.replace ',', '' # get rid of commas
       if AGENTIC[word] is true
         agentic[word] ||= 0
         agentic[word] += 1
