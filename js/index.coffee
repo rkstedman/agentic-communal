@@ -1,59 +1,135 @@
 # https://github.com/derbyjs/derby-standalone
 
 AGENTIC=
+  'go-getter': true
+  'risk-taker': true
   'self-confident': true
   active: true
+  adventurous: true
   aggressive: true
   ambitious: true
+  analyzing: true
   assertive: true
+  athletic: true
   authoritative: true
+  autonomous: true
+  boastful: true
   bold: true
   coarse: true
+  compentent: true
   confident: true
+  courage: true
+  courageous: true
   daring: true
   decisive: true
+  determined: true
+  dominance: true
   dominant: true
   driver: true
   entreneurial: true
   forceful: true
-  'go-getter': true
+  headstrong: true
+  hierarchal: true
+  impulsive: true
   independent: true
+  individual: true
+  individualistic: true
   influencial: true
   innovator: true
   intellectual: true
+  leader: true
+  leadership: true
+  logic: true
+  logical: true
+  masuline: true
+  objective: true
+  opinionated: true
+  opinioned: true
   outspoken: true
+  persist: true
+  persistant: true
+  principled: true
   rational: true
-  'risk-taker': true
-  strong: true
   strategic: true
-  tough: true
+  strong: true
+  superior: true
   thinker: true
+  tough: true
 
 COMMUNAL=
+  affection: true
   affectionate: true
   agreeable: true
   appreciative: true
+  cared: true
   caring: true
+  cheer: true
+  cheerful: true
+  collaborate: true
   collaborative: true
   committed: true
-  dependent: true
+  communal: true
+  commune: true
+  compassion: true
+  compassionate: true
+  connective: true
+  considerate: true
+  cooperate: true
+  cooperative: true
   dedicated: true
+  dependent: true
   emotional: true
+  emotions: true
+  empathetic: true
+  empathy: true
+  feminine: true
   friendly: true
+  gentle: true
+  gently: true
   hardworking: true
   helpful: true
-  gentle: true
+  helping: true
+  helps: true
+  honest: true
+  honestly: true
+  honesty: true
+  inclusive: true
+  interdependent: true
+  interpersonal: true
   kind: true
+  kindness: true
+  loyal: true
+  loyalty: true
   mild: true
+  modest: true
+  modesty: true
   nice: true
+  nurture: true
+  nurtured: true
+  nurturing: true
   nuturing: true
+  personable: true
   pleasant: true
-  tactical: true
-  thoughtful: true
+  pleasantly: true
+  pleasure: true
+  polite: true
+  politely: true
+  quiet: true
+  quietly: true
+  responsible: true
+  responsive: true
   sensitive: true
   supportive: true
+  sweet: true
+  sweetest: true
+  sweetly: true
   sympathetic: true
+  sympathy: true
+  tactical: true
+  thoughtful: true
   warm: true
+  yielded: true
+  yielding: true
   # relationship builder
   # team player: true
 
